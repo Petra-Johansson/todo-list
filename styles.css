@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-clr);
+}
+:root {
+  --primarary-clr: rgb(46, 45, 45);
+  --secondary-clr: rgba(240, 237, 237, 0.555);
+  --third-clr: rgba(80, 131, 97, 0.699);
+}
+body {
+  background-color: var(--third-clr);
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  margin-top: 50px;
+  background-color: var(--secondary-clr);
+  width: 600px;
+  min-height: 500px;
+  padding: 2%;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px;
+  position: relative;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0.5em 0;
+  border-bottom: 1px solid #333;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+#inputNewTask {
+  line-height: 2em;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: var(--primary-clr);
+}
+
+.deleteAllTasks {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 1em;
+  left: 38%;
+}
+#completedTodos {
+  margin-bottom: 3em;
+}
+li button {
+  float: right;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  margin-top: 0.3em;
+  text-transform: capitalize;
+}
+#errorMessage {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+label[contenteditable="true"] {
+  border: 1px solid #333;
+  line-height: 2em;
+  border-radius: 5px;
+  background-color: var(--secondary-clr);
+  padding: 0.2em;
+}
+
+button {
+  border-radius: 5px;
+  padding: 0 4px;
+  margin-left: 10px;
+  background: var(--secondary-clr);
+}
+button:hover {
+  color: white;
+}
+#buttonAddTask:hover,
+#done-button:hover {
+  background: rgba(115, 207, 115, 0.788);
+}
+#buttonDeleteAllTasks:hover,
+#delete-button:hover {
+  background-color: rgb(250, 92, 92);
+}
+#edit-button:hover {
+  background-color: rgb(169, 169, 243);
+}

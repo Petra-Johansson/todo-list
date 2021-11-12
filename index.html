@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+
+    <title>MY TODO LIST</title>
+  </head>
+
+  <body>
+    <main class="main-container">
+      <div id="todoContent">
+        <h1>My Todo's</h1>
+
+        <div class="input">
+          <input
+            autofocus
+            type="text"
+            id="inputNewTask"
+            placeholder="Add a new task!"
+          />
+          <button onclick="addTodoFunc()" id="buttonAddTask">Add</button>
+        </div>
+        <p id="errorMessage" class="error"></p>
+        <h2>Things to do today</h2>
+
+        <ul id="todo-list"></ul>
+      </div>
+      <div id="completedTodos">
+        <h2>Completed</h2>
+        <ul id="ulCompletedTodos"></ul>
+      </div>
+      <div class="deleteAllTasks">
+        <button id="buttonDeleteAllTasks" onClick="deleteAllFunc()">
+          Delete all tasks!
+        </button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
